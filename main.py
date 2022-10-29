@@ -38,11 +38,17 @@ people = input()
 print("Input your phone number so we can contact you below")
 phonenum = input()
 
-if zipcode == shelterzipcode:
+if zipcode == shelterzipcode and sheltercapacity >= people:
   print("Shelter " + sheltername + " is available")
-if zipcode == shelterzipcode2:
+else:
+  print("Shelter " +sheltername + " is not available")
+if zipcode == shelterzipcode2 and sheltercapacity >= people:
   print("Shelter " + sheltername2 + " is available")
+else:
+  print("Shelter " +sheltername + " is not available")
 if zipcode !=shelterzipcode and zipcode != shelterzipcode2:
   print("There are no shelters available near you")
+
+
 
 
